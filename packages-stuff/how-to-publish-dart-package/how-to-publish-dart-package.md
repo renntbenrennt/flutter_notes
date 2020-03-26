@@ -56,7 +56,6 @@ Then please follow the suggestion to make your package meets the requirement of 
 
 For instance, we can see from the following suggestion that
 
-
 ![warning and suggestion](images/warning_and_suggestion.png)
 
 1. This package's pubspec.yaml is missing a 'homepage' field, which can be the github repo address if you don't have a website for the package
@@ -64,7 +63,6 @@ For instance, we can see from the following suggestion that
 3. And there's some suggestions, they won't normally cause any harm but it better to follow its advice especially the `CHANGELOG` and the `LICENSE`
 
 After everything is ready, you can see that it has 0 warnings.
-
 
 ![no warning](images/done.png)
 
@@ -77,14 +75,27 @@ flutter pub publish
 
 If you are first time publish a package, you will have this in your terminal asking for authorization
 
-
 ![waiting for authorization](images/authorization.png)
 
 Next, just head to the browser to click 'Allow access', and all done!
-
 
 ![uploaded](images/author_success.png)
 
 
 Hooray! You just publish your very own dart package!
 Next, you just need to go to your package page to see if there's anything need to improve for better score!
+
+### Caveat
+1. how to import the package in my example project?
+
+In the pubspec.yaml file of the example project, add your package to the dependency like this:
+
+![how to import local library](images/how_to_import_local_library.png)
+
+
+---
+for further details, check out the official documentation pertinent to this subject
+
+[(Flutter)Developing Dart packages](https://flutter.dev/docs/development/packages-and-plugins/developing-packages#dart)
+
+[(Dart)Creating Dart packages](https://dart.dev/guides/libraries/create-library-packages)
